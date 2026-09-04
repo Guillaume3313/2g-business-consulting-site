@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root{
+              --ink:#10151a; --paper:#f7f6f2; --brass:#b8813c; --brass-soft:#e0ab68; --pine:#3f6a5c;
+        }
+        *{box-sizing:border-box; margin:0; padding:0;}
+        html,body{ background:var(--ink); }
+        body{
+              font-family:'Inter', sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center;
+        }
+        .canvas{ width:1584px; height:396px; position:relative; overflow:hidden; flex:none; background:var(--ink); }
+        .blob1{ position:absolute; width:560px; height:560px; top:-240px; right:-160px; border-radius:50%;
+                   background:radial-gradient(circle, rgba(184,129,60,0.36), transparent 70%); filter:blur(30px); }
+        .blob2{ position:absolute; width:460px; height:460px; bottom:-240px; left:280px; border-radius:50%;
+                   background:radial-gradient(circle, rgba(111,163,146,0.24), transparent 70%); filter:blur(30px); }
+        .content{ position:absolute; right:64px; top:0; bottom:0; display:flex; flex-direction:column; justify-content:center; width:870px; }
+        .tag{ font-size:16px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--brass-soft); margin-bottom:22px; }
+        h1{ font-family:'Source Serif 4', serif; font-weight:600; font-size:56px; line-height:1.18; color:var(--paper); letter-spacing:-0.01em; }
+        .sub{ margin-top:26px; font-size:19px; font-weight:500; color:rgba(247,246,242,0.68); line-height:1.5; max-width:700px; }
+      </style>
+  </head>
+  <body>
+      <div class="canvas">
+            <div class="blob1"></div>
+            <div class="blob2"></div>
+            <div class="content">
+                    <div class="tag">2G Business Consulting</div>
+                    <h1>Conseil stratégique, apport d'affaires &amp; stratégie IA.</h1>
+                  <div class="sub">Un accompagnement direct, pensé pour la clarté des décisions et la rapidité d'exécution.</div>
+            </div>
+      </div>
+  </body></html>html>
